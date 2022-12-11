@@ -1,0 +1,149 @@
+
+nav{
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
+}
+nav a:hover{
+    color: green;
+}
+/*end list navbar */
+/*background color fade*/
+body{
+    background: linear-gradient(rgba(0, 224, 56, 0.5),rgba(182, 233, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+img{
+    height: 250px;
+    width: 250px;
+}
+
+table{
+    width: 70%;
+    color: rgb(58, 58, 58);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 15px 50px;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #82df99;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #BCF5A9;
+}
+
+h1{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+#localizacao{
+    height: 250px;
+}
+
+.titulo{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.formRegistar{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #82df99;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+input[type=text], input[type=password],input[type=email]{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+#btnRegistar{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin:auto;
+    display: flex;
+    width: 40%;
+   
+}
+
+#btnRegistar:hover{
+    opacity: 1;
+}
+
+img.verifica{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+   
+  
+
+    
