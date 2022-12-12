@@ -35,25 +35,30 @@ include 'header.php';
         $row = mysqli_fetch_array($result);
         
         if(password_verify($password, $row['pass'])){
-            $_SESSION['tipoUtilizador'] = $row['tipoUtilizador'];
+            if($row ['tipoUtilizador'] != 3){
 
-            $_SESSION['nomeUtilizador'] = $row['nomeUtilizador'];
+                $_SESSION['tipoUtilizador'] = $row['tipoUtilizador'];
 
-            if($_SESSION['tipoUtilizador'] == 2){
+                $_SESSION['nomeUtilizador'] = $row['nomeUtilizador'];
+            }
+            if($row ['tipoUtilizador'] == 2){
                 header('Location: pagina_Inicial.php');
             }
-            else if($_SESSION['tipoUtilizador'] == 1){
+            else if($row ['tipoUtilizador'] == 1){
                 header('Location: gestaoUtilizador.php');
             }
-            else if($_SESSION['tipoUtilizador'] == 3){
+            else if($row ['tipoUtilizador'] == 3){
+                echo "<p>Utilizador não validado</p>";
+            }
+            else if($row ['tipoUtilizador'] == 4){
                 header('Location: pagina_Inicial.php');
             }
             else{
-                echo "Login falhou";
+                echo "<p>Login falhou</p>";
             }
     }
     else{
-        echo "Login falhou";
+        echo "<p>Login falhou</p>";
     }
 }
             

@@ -30,6 +30,14 @@
                     echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
                     echo "<li><a href='dadosPessoais.php' class='navbar-nav'>Dados Pessoais</a></li>";
                 }
+                else if($_SESSION['tipoUtilizador'] == 4){
+                    echo "<li><a href='pagina_Inicial.php' class='navbar-nav'>Booking</a></li>";
+                    echo "<li><a href='contactos.php' class='navbar-nav'>Contactos</a></li>";
+                    echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
+                    echo "<li><a href='dadosPessoais.php' class='navbar-nav'>Dados Pessoais</a></li>";
+                    echo "<li><a href='quotas.php' class='navbar-nav'>Gestão de quotas</a></li>";
+                }
+
             }
             else{
                 echo "<li><a href='pagina_Inicial.php' class='navbar-nav'>Booking</a></li>";
