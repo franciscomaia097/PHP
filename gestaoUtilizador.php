@@ -15,7 +15,10 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
-  echo "<h1>Gestão de utilizadores</h1>";
+  echo "<h1>Gestão de utilizadores</h1>"; 
+
+  echo "<a href='adicionarUtilizador.php'><button class='button'>Adiconar utilizador</button></a>";
+
   echo "<table id='t01'>
   
 <tr>
@@ -25,6 +28,8 @@ if ($result->num_rows > 0) {
 <th>Telefone</th>
 <th>Tipo de utilizador</th>
 <th>Validar</th>
+<th>Eliminar</th>
+<th>Editar</th>
 </tr>";
   while($row = $result->fetch_assoc()) {
     echo "<tr>";
@@ -40,6 +45,14 @@ echo "<a href='validarUtilizador.php?id=" . $row['nomeUtilizador'] . "&estado=" 
 else if($row['tipoUtilizador'] == 2){
 echo "<a href='validarUtilizador.php?id=" . $row['nomeUtilizador'] . "&estado=" . $row['tipoUtilizador'] . "'><img src='imagens/fechar.png' class='verifica'></a>";
 }
+//buttão para eliminar utilizador
+echo "<td> <a href='eliminarUtilizador.php?nomeUtilizador=" . $row['nomeUtilizador'] . "'><button class='button'>Eliminar</button></a>";
+//button to edit user information
+echo "<td> <a href='editarUtilizador.php?nomeUtilizador=" . $row['nomeUtilizador'] . "'><button class='button'>Editar</button></a>";
+
+
+
+
 echo "</td>";
 echo "</tr>";
   }

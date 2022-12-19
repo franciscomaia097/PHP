@@ -21,6 +21,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "<tr>";
 echo "<td> <img src='imagens/".$row['img_cabana']."'> </td>";
+echo "<td> <a href='cabanaInfo.php?id=" . $row['idCabana'] . "'><button class='button'>Ver mais</button></a>";
 echo "<td>" . $row['nome'] . "</td>";
 echo "<td>" . $row['tipo'] . "</td>";
 echo "<td>" . $row['descricao'] . "</td>";

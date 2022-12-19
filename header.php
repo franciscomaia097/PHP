@@ -14,8 +14,9 @@
                 if($_SESSION['tipoUtilizador'] == 2){
                     echo "<li><a href='pagina_Inicial.php' class='navbar-nav'>Booking</a></li>";
                     echo "<li><a href='contactos.php' class='navbar-nav'>Contactos</a></li>";
-                    echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
                     echo "<li><a href='dadosPessoais.php' class='navbar-nav'>Dados Pessoais</a></li>";
+                    echo "<li><a href='gestaoReservas.php' class='navbar-nav'>Gestão de Reservas</a></li>";
+                    echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
 
                 }
                 else if($_SESSION['tipoUtilizador'] == 1){
@@ -33,10 +34,20 @@
                 else if($_SESSION['tipoUtilizador'] == 4){
                     echo "<li><a href='pagina_Inicial.php' class='navbar-nav'>Booking</a></li>";
                     echo "<li><a href='contactos.php' class='navbar-nav'>Contactos</a></li>";
-                    echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
                     echo "<li><a href='dadosPessoais.php' class='navbar-nav'>Dados Pessoais</a></li>";
                     echo "<li><a href='quotas.php' class='navbar-nav'>Gestão de quotas</a></li>";
+                    echo "<li><a href='gestaoReservas.php' class='navbar-nav'>Gestão de Reservas</a></li>";
+                    echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
                 }
+                else if($_SESSION['tipoUtilizador'] == 5){
+                    echo "<li><a href='pagina_Inicial.php' class='navbar-nav'>Booking</a></li>";
+                    echo "<li><a href='contactos.php' class='navbar-nav'>Contactos</a></li>";
+                    echo "<li><a href='dadosPessoais.php' class='navbar-nav'>Dados Pessoais</a></li>";
+                    echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
+                    echo "<li><a href='gestaoReservaFuncionario.php' class='navbar-nav'>Gestão de Reservas</a></li>";
+                }
+                
+                
 
             }
             else{

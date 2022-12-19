@@ -22,8 +22,7 @@ nav a{
 nav a:hover{
     color: green;
 }
-/*end list navbar */
-/*background color fade*/
+
 body{
     background: linear-gradient(rgba(0, 224, 56, 0.5),rgba(182, 233, 0, 0.5));
     background-size: cover;
@@ -149,7 +148,14 @@ img.verifica{
     padding: 20px;
 }
 
-
+h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
    
   
 
