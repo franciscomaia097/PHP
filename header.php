@@ -21,8 +21,12 @@
                 }
                 else if($_SESSION['tipoUtilizador'] == 1){
                     echo "<li><a href='gestaoUtilizador.php' class='navbar-nav'>Gestão de Utilizadores</a></li>";
-                    echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
                     echo "<li><a href='dadosPessoais.php' class='navbar-nav'>Dados Pessoais</a></li>";
+                    echo "<li><a href='gestaoReservaFuncionario.php' class='navbar-nav'>Gestão de Reservas</a></li>";
+                    echo "<li><a href='gestaoCabanas.php' class='navbar-nav'>Gestão cabanas</a></li>";
+                    echo "<li><a href='logout.php' class='navbar-nav'>Logout</a></li>";
+
+
 
                 }
                 else if($_SESSION['tipoUtilizador'] == 3){
